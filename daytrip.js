@@ -56,15 +56,16 @@ let userInput = prompt("would you like to make any changes YES or NO")
         } else if (userChange === "Entertainment"){
             letsHaveFun = randEntertainment(entertainment)
             myFunction(placeSelected, letsEatHere, letsDrive, letsHaveFun);
-        } else {
+        } else(userInput === "no");
         myFunction(placeSelected,letsEatHere,letsDrive,letsHaveFun,);
         }
-
      let userConfirm = prompt("Are you Happy with your changes? Yes or No")
         if(userConfirm === "yes"){
-        myFunction(placeSelected,letsEatHere,letsDrive,letsHaveFun, + 'Enjoy your trip');
+        myFunction(placeSelected,letsEatHere,letsDrive,letsHaveFun,);
+
         }
-    } 
+        
+     
     
     
     
